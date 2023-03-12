@@ -209,6 +209,14 @@ flowchart
     Process6 -- "Flowline with dot head" --o Process7
 ```
 
+```
+flowchart
+    Process0 -- Flowline --- Process1
+    Process2 -- "Flowline with Arrowhead" --> Process3
+    Process4 -- "Flowline with cross head" --x Process5
+    Process6 -- "Flowline with dot head" --o Process7
+```
+
 A link with arrow head in mermaid. Shows the process's order of operation. A line coming from one symbol and pointing at another. Arrowheads are added if the flow is not the standard top-to-bottom, left-to right. Cross head and dot head are not defined in classic flowcharting language.
 
 ## Dotted Line 
@@ -218,11 +226,21 @@ flowchart
     Process1 -. Dotted Line .-> Process2
 ```
 
+```
+flowchart
+    Process1 -. Dotted Line .-> Process2
+```
+
 A dotted link in mermaid. Dotted lines are not defined in classic flowchart diargaming language.
 
 ## Thick Line 
 
 ```mermaid
+flowchart
+    Process1 == Thick Line ==> Process2
+```
+
+```
 flowchart
     Process1 == Thick Line ==> Process2
 ```
